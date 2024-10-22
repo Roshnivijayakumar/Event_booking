@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event List</title>
+</head>
+<body>
+    <h1>All Events</h1>
+    <ul>
+
+        <li>
+            <a href="{% url 'event_detail' event.id %}">{{ event.title }}</a>
+            - {{ event.date }} at {{ event.time }}
+        </li>
+
+        <li>No events available.</li>
+
+    </ul>
+</body>
+</html>
